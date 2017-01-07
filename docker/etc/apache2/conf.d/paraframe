@@ -1,0 +1,3 @@
+<Perl>
+    unshift @INC, '/usr/local/paraframe/lib';
+</Perl>

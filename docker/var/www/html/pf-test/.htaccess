@@ -1,0 +1,8 @@
+Options -MultiViews
+ErrorDocument 404 /pf-test/page_not_found.tt
+ErrorDocument 406 /pf-test/page_not_found.tt
+<FilesMatch ".tt$|^$">
+  SetHandler           perl-script
+  PerlHandler          Para::Frame::Client
+</FilesMatch>
+PerlSetVar port 7788
